@@ -23,7 +23,7 @@ function getQuote(callback) {
   xhttp.send();
 };
 
-function mycallback(quoteText) {
+function displayQuote(quoteText) {
   let i = 0;
   quoteContent[0].innerHTML = '"' + quoteText[i].quote + '"';
   quoteAuthor[0].innerHTML = quoteText[i].author;
@@ -42,7 +42,7 @@ function mycallback(quoteText) {
   });
 };
 
-getQuote(mycallback);
+getQuote(displayQuote);
 
 
 //Time of day change
